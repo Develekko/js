@@ -1,0 +1,17 @@
+/* ======================== General Css ========================*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+section
+{
+    outline: 1px solid black;
+    border-style:double;
+}
+
+h1,h2,label
+{
+    color: #001F5F!important;
+}
