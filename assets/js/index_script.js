@@ -208,8 +208,18 @@ function q11()
 {
   var valueInput1 = document.getElementById("num11-1").value
   var valueInput2 = document.getElementById("num11-2").value
-
-  document.getElementById("result11").innerHTML = valueInput1 ** valueInput2
+  if(valueInput1 == "" || valueInput2 == "")
+  {
+    document.getElementById("result11").innerHTML = null;
+  }
+  else if ( valueInput1 == 0 || valueInput2 == 0 )
+  {
+    document.getElementById("result11").innerHTML = "undefined";
+  }
+  else
+  {
+    document.getElementById("result11").innerHTML = valueInput1 ** valueInput2;
+  }
   document.getElementById("num11-1").value = null;
   document.getElementById("num11-2").value = null;
 }
