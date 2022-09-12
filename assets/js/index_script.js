@@ -28,7 +28,7 @@ function q3()
 {
   var valueInput1 = Number(document.getElementById("num3-1").value);
   var valueInput2 = Number(document.getElementById("num3-2").value);
-  if(valueInput1 == "" || valueInput2 == "")
+  if(valueInput1 == "" && valueInput2 == "")
   {
     document.getElementById("result3").innerHTML = null;
   }
@@ -69,7 +69,7 @@ function q5()
   var valueInput1 = Number(document.getElementById("num5-1").value);
   var valueInput2 = Number(document.getElementById("num5-2").value);
   var valueInput3 = Number(document.getElementById("num5-3").value);
-  if(valueInput1 == "" || valueInput2 == "" || valueInput3 == "")
+  if(valueInput1 == ""  && valueInput2 == "" &&  valueInput3 == "")
   {
     document.getElementById("result5-1").innerHTML = null;
     document.getElementById("result5-2").innerHTML = null;
@@ -117,14 +117,14 @@ function q6()
 // ================================ Question #7 ======================================
 function q7()
 {
-  var valueInput7 = document.getElementById("num7").value;
-  if(valueInput7 == "")
+  var valueInput = document.getElementById("num7").value;
+  if(valueInput == "")
   {
     document.getElementById("result7").innerHTML = null;
   }
   else
   {
-    if(valueInput7 == "a" || valueInput7 == "A" || valueInput7 == "e" || valueInput7 == "E" || valueInput7 == "i" || valueInput7 == "I" || valueInput7 == "o" || valueInput7 == "O" || valueInput7 == "u" || valueInput7 == "U")
+    if(valueInput == "a" || valueInput == "A" || valueInput == "e" || valueInput == "E" || valueInput == "i" || valueInput == "I" || valueInput == "o" || valueInput == "O" || valueInput == "u" || valueInput == "U")
     {
       document.getElementById("result7").innerHTML = "vowel"
     }
@@ -208,13 +208,21 @@ function q11()
 {
   var valueInput1 = document.getElementById("num11-1").value
   var valueInput2 = document.getElementById("num11-2").value
-  if(valueInput1 == "" || valueInput2 == "")
+  if( valueInput1 == "" && valueInput2 == "" )
   {
     document.getElementById("result11").innerHTML = null;
   }
-  else if ( valueInput1 == 0 || valueInput2 == 0 )
+  else if( valueInput1 == 0 && valueInput2 == 0 )
   {
     document.getElementById("result11").innerHTML = "undefined";
+  }
+  else if (  valueInput2 == 1 )
+  {
+    document.getElementById("result11").innerHTML = valueInput1 ;
+  }
+  else if( valueInput2 == 0)
+  {
+    document.getElementById("result11").innerHTML = 1;
   }
   else
   {
