@@ -303,46 +303,50 @@ function q12()
 function q13()
 {
   var valueInput = Number(document.getElementById("num13").value);
-  if( valueInput == "" )
+  var CheckValue = document.getElementById("num13").value;
+
+  if( CheckValue == "" )
   {
     document.getElementById("result13").innerHTML = null; 
   }
   else
   {
-  if(valueInput <= 12 && valueInput > 0)
-  {
-    if( valueInput == 1 || valueInput == 3 || valueInput == 5 || valueInput == 7 || valueInput == 8 || valueInput == 10 || valueInput == 12)
-    {
-      document.getElementById("result13").innerHTML = "Days in Month: 31"; 
-    }
-    else if( valueInput == 4 || valueInput == 6 || valueInput == 9 || valueInput == 11)
-    {
-      document.getElementById("result13").innerHTML = "Days in Month: 30"; 
-    }
-    else if( valueInput < 0 )
-    {
-      document.getElementById("result13").innerHTML = "hamada"; 
-    }
-    else
-    {
-      document.getElementById("result13").innerHTML = "Days in Month: 28 , " + ' "also every 4 years Feb becomes 29 Day"'; 
-    }
-  }
-  else if ( valueInput > 12)
-  {
-    document.getElementById("result13").innerHTML = "There's only 12 Month in the Year There's nothing called " + valueInput + " month ==> Try Again !"; 
-    document.getElementById("result13").classList.add("text-danger")
-  }
-  else if (valueInput == 0)
-  {
-    document.getElementById("result13").innerHTML = "For Your Information,  Months Counter start with 1 to 12 :) "; 
-    document.getElementById("result13").classList.add("text-danger")
-  }
-  else
-  {
-    document.getElementById("result13").innerHTML = "There's No Month in Minus ==> Try Again !"; 
-    document.getElementById("result13").classList.add("text-danger")
-  }
+      if(valueInput <= 12 && valueInput > 0)
+        {
+          if( valueInput == 1 || valueInput == 3 || valueInput == 5 || valueInput == 7 || valueInput == 8 || valueInput == 10 || valueInput == 12)
+          {
+            document.getElementById("result13").innerHTML = "Days in Month: 31"; 
+            document.getElementById("result13").classList.remove("text-danger") ;
+            document.getElementById("result13").classList.add("text-success") ;
+          }
+          else if( valueInput == 4 || valueInput == 6 || valueInput == 9 || valueInput == 11)
+          {
+            document.getElementById("result13").innerHTML = "Days in Month: 30"; 
+            document.getElementById("result13").classList.remove("text-danger") ;
+            document.getElementById("result13").classList.add("text-success") ;
+          }
+          else
+          {
+            document.getElementById("result13").innerHTML = "Days in Month: 28 , " + ' "also every 4 years Feb becomes 29 Day"';
+            document.getElementById("result13").classList.remove("text-danger") ;
+            document.getElementById("result13").classList.add("text-success") ;
+        }
+      }
+      else if ( valueInput > 12)
+      {
+        document.getElementById("result13").innerHTML = "There's only 12 Month in the Year There's nothing called " + valueInput + " month ==> Try Again !"; 
+        document.getElementById("result13").classList.add("text-danger")
+      }
+      else if (valueInput == 0)
+      {
+        document.getElementById("result13").innerHTML = "For Your Information,  Months Counter start with 1 to 12 :) "; 
+        document.getElementById("result13").classList.add("text-danger")
+      }
+      else
+      {
+        document.getElementById("result13").innerHTML = "There's No Month in Minus ==> Try Again !"; 
+        document.getElementById("result13").classList.add("text-danger")
+      }
   }
   document.getElementById("num13").value = null;
 }
