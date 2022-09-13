@@ -577,33 +577,18 @@ function q19()
 function q20()
 {
   var valueInput1 = Number(document.getElementById("num20-1").value);
-  var valueInput2 = document.getElementById("num20-2").value;
+  var Operator = document.getElementById("num20-2").value;
   var valueInput3 = Number(document.getElementById("num20-3").value);
   var Sum = valueInput1 + valueInput3;
   var Minus = valueInput1 - valueInput3;
   var Multiply = valueInput1 * valueInput3;
   var Division = valueInput1 / valueInput3;
   var Modulus  = valueInput1 % valueInput3;
-  switch(valueInput2)
+  switch(true)
   {
-    case "+" :
-    document.getElementById("result20").innerHTML = Sum;
-    break;
-    case "-" :
-    document.getElementById("result20").innerHTML = Minus;
-    break;
-    case "*" :
-    document.getElementById("result20").innerHTML = Multiply;
-    break;
-    case "/" :
-    document.getElementById("result20").innerHTML = Division;
-    break;
-    case "%" :
-    document.getElementById("result20").innerHTML = Modulus;
-    break;
-    default:
-    document.getElementById("result20").innerHTML = " ==> Use only one of These  Operators ( + , - , * , / , % )";
-    document.getElementById("result20").classList.add("text-danger")
+    case Operator != "+" || Operator != "-" || Operator != "*" || Operator != "/" || Operator != "%"  :
+      document.getElementById("result20").innerHTML = " ==> Use only one of These  Operators ( + , - , * , / , % )";
+      document.getElementById("result20").classList.add("text-danger")
     break;
   }
   switch(true)
@@ -612,11 +597,59 @@ function q20()
     document.getElementById("result20").innerHTML = null;
     break;
   }
+  switch(Operator)
+  {
+    case "+" :
+    document.getElementById("result20").innerHTML = Sum;
+    document.getElementById("result20").classList.remove("text-danger");
+    document.getElementById("result20").classList.add("text-success")
+    break;
+    case "-" :
+    document.getElementById("result20").innerHTML = Minus;
+    document.getElementById("result20").classList.remove("text-danger");
+    document.getElementById("result20").classList.add("text-success")
+    break;
+    case "*" :
+    document.getElementById("result20").innerHTML = Multiply;
+    document.getElementById("result20").classList.remove("text-danger");
+    document.getElementById("result20").classList.add("text-success")
+    break;
+    case "/" :
+    document.getElementById("result20").innerHTML = Division;
+    document.getElementById("result20").classList.remove("text-danger");
+    document.getElementById("result20").classList.add("text-success")
+    break;
+    case "%" :
+    document.getElementById("result20").innerHTML = Modulus;
+    document.getElementById("result20").classList.remove("text-danger");
+    document.getElementById("result20").classList.add("text-success")
+    break;
+  }
+  switch(true)
+  {
+    case Operator == "/" && valueInput3 == 0 :
+    document.getElementById("result20").innerHTML = "Cannot divide by zero";
+    document.getElementById("result20").classList.add("text-danger")
+    break;
+  }
+  switch(true)
+  {
+    case Operator == "/"  && valueInput1 == 0 && valueInput3 == 0 :
+    document.getElementById("result20").innerHTML = "Result is undefined";
+    document.getElementById("result20").classList.add("text-danger")
+    break;
+  }
+  switch(true)
+  {
+    case Operator == "%" && valueInput3 == 0 :
+    document.getElementById("result20").innerHTML = "Result is undefined";
+    document.getElementById("result20").classList.add("text-danger")
+    break;
+  }
   document.getElementById("num20-1").value = null;
   document.getElementById("num20-2").value = null;
   document.getElementById("num20-3").value = null;
 }
-
 // ===================================================================================================== 
 
 // For Stars in using switch case
@@ -949,9 +982,9 @@ function checkInput19()
 function checkInput20()
 {
   var valueInput1 = document.getElementById("num20-1").value;
-  var valueInput2 = document.getElementById("num20-2").value;
+  var Operator = document.getElementById("num20-2").value;
   var valueInput3 = document.getElementById("num20-3").value;
-  if( valueInput1 == "" || valueInput2 == "" || valueInput3 == "" )
+  if( valueInput1 == "" || Operator == "" || valueInput3 == "" )
   {
     document.getElementById("btn20").classList.add("disabled");
     document.getElementById("btn20").classList.remove("btn-primary");
@@ -963,7 +996,7 @@ function checkInput20()
     document.getElementById("btn20").classList.remove("btn-secondary");
     document.getElementById("btn20").classList.add("btn-primary");
   }
-  if( valueInput2 == "+" || valueInput2 == "-" || valueInput2 == "*" || valueInput2 == "/" || valueInput2 == "%" )
+  if( Operator == "+" || Operator == "-" || Operator == "*" || Operator == "/" || Operator == "%" )
   {
     document.getElementById("hint").innerHTML = null;
   }
