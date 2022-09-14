@@ -1009,3 +1009,30 @@ function checkInput20()
     document.getElementById("hint").innerHTML = " ==> Use only ( + , - , * , / , % )";
   }
 }
+//For Theme Mode
+function theme()
+{
+  var dark = document.body;
+  dark.classList.toggle("dark-mode");
+  document.getElementById("theme-on").classList.toggle("bi-toggle-on");
+  document.getElementById("theme-on").classList.toggle("bi-toggle-off");
+  document.getElementById("heading").classList.toggle("heading");
+  document.getElementById("case-section").classList.toggle("heading");
+  document.getElementById("border").classList.toggle("section-border");
+  const list = document.querySelectorAll('.label');
+    for (const element of list) {
+      element.classList.toggle('toggle-label');
+    }
+  const input = document.querySelectorAll('.input');
+    for (const element of input) {
+      element.classList.toggle('toggle-input');
+    }
+    const span = document.querySelectorAll('.number-section');
+    for (const element of span) {
+      element.classList.toggle('number-span');
+    }
+    const sectionBorder = document.querySelectorAll('.box');
+    for (const element of sectionBorder) {
+      element.classList.toggle('box-border');
+    }
+}

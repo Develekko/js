@@ -6,480 +6,485 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, minimum-scale=1, maximum-scale=1">
     <title>Js Assignment</title>
     <link rel="shortcut icon" href="assets/images/js.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="assets/bootstrap-icons-1.9.1/bootstrap-icons.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style_index.css">
 </head>
 <body>
-    <section class="container my-5">
-        <h1 class="text-center mb-5">Assignment 1</h1>
+    <section id="border" class="container my-5">
+        <h1 id="heading" class="text-center mb-5">Assignment 1</h1>
         <div class="row">
             <!--=============== Question #1 ============ -->
             <div class="mb-4">
-                <h4><span class="text-danger">1-</span> Write a program that allow to user enter number then printit</h4>
-                <div class="ms-3 mt-3 border border-end-0 border-top-0 border-start-0 border-1 border-dark">
+                <h4><span class="text-danger number-section">1-</span> Write a program that allow to user enter number then printit</h4>
+                <div class="box ms-3 mt-3 border border-end-0 border-top-0 border-start-0 border-1 border-dark">
                     <tr>                           
-                        <td><label class="h5">Enter Number:</label></td>
-                        <td><input type="number" onkeyup="checkInput1()" id="num1"><br></td>
+                        <td><label class="label h5">Enter Number:</label></td>
+                        <td><input class="input"  type="number" onkeyup="checkInput1()" id="num1"><br></td>
                     </tr>
                     <tr>
                         <td><button class="btn btn-secondary py-1 my-2 disabled" id="btn1" onclick="q1()">Submit</button></td>
                     </tr>                
                     <tr><br>
-                        <td><label class="h5" class="my-2">Result :</label></td>
+                        <td><label class="label h5" class="my-2">Result :</label></td>
                         <td><span class="ms-2 mb-2 text-success fw-bold" id="result1"></span></td>
                     </tr>
                 </div>
             </div>
             <!--=============== Question #2 ============ -->
             <div class="mb-4">
-                <h4><span class="text-danger">2-</span> Write a program that take number from user then print yes if that number can divide by 3
+                <h4><span class="text-danger number-section">2-</span> Write a program that take number from user then print yes if that number can divide by 3
                     and 4 otherwise print no</h4>
-                <div class="ms-3 mt-3 border border-end-0 border-top-0 border-start-0 border-1 border-dark">
+                <div class="box ms-3 mt-3 border border-end-0 border-top-0 border-start-0 border-1 border-dark">
                     <tr>
-                        <td><label class="h5">Enter Number:</label></td>
-                        <td><input type="number" onkeyup="checkInput2()" id="num2"><br></td>
+                        <td><label class="label h5">Enter Number:</label></td>
+                        <td><input class="input" type="number" onkeyup="checkInput2()" id="num2"><br></td>
                     </tr>
                     <tr>
                         <td><button class="btn btn-secondary py-1 my-2 disabled" id="btn2" onclick="q2()">Submit</button></td>
                     </tr>
                     
                     <tr><br>
-                        <td><label class="h5" class="my-2">Result :</label></td>
+                        <td><label class="label h5" class="my-2">Result :</label></td>
                         <td><span class="ms-2 mb-2 text-success fw-bold" id="result2"></span></td>
                     </tr>
                 </div>
             </div>
              <!--=============== Question #3 ============ -->
              <div class="mb-4">
-                <h4><span class="text-danger">3-</span> Write a program that allows the user to insert 2 integers then print the max</h4>
-                <div class="ms-3 mt-3 border border-end-0 border-top-0 border-start-0 border-1 border-dark">
+                <h4><span class="text-danger number-section">3-</span> Write a program that allows the user to insert 2 integers then print the max</h4>
+                <div class="box ms-3 mt-3 border border-end-0 border-top-0 border-start-0 border-1 border-dark">
                     <table>
                         <tr>
-                            <td><label class="h5">Enter Number 1</label></td>
-                            <td><label class="h5">:</label></td>
-                            <td><input class="mt-1 ms-1" type="number" onkeyup="checkInput3()"  id="num3-1"><br></td>
+                            <td><label class="label h5">Enter Number 1</label></td>
+                            <td><label class="label h5">:</label></td>
+                            <td><input class="input" class="mt-1 ms-1" type="number" onkeyup="checkInput3()"  id="num3-1"><br></td>
                         </tr>
     
                         <tr>
-                            <td><label class="h5">Enter Number 2</label></td>
-                            <td><label class="h5">:</label></td>
-                            <td><input class="mt-1 ms-1" type="number" onkeyup="checkInput3()"  id="num3-2"><br></td>
+                            <td><label class="label h5">Enter Number 2</label></td>
+                            <td><label class="label h5">:</label></td>
+                            <td><input class="input" class="mt-1 ms-1" type="number" onkeyup="checkInput3()"  id="num3-2"><br></td>
                         </tr>
                         <tr>
                             <td><button class="btn btn-secondary py-1 my-2 disabled" id="btn3" onclick="q3()">Submit</button></td>
                         </tr>         
                     </table>
-                    <label class="h5" class="my-2">Result :</label>
+                    <label class="label h5" class="my-2">Result :</label>
                     <span class="ms-2 mb-2 text-success fw-bold" id="result3"></span>
                 </div>
             </div>
             <!--=============== Question #4 ============ -->
             <div class="mb-4">
-                <h4><span class="text-danger">4-</span> Write a program that allows the user to insert an integer then print negative if it is
+                <h4><span class="text-danger number-section">4-</span> Write a program that allows the user to insert an integer then print negative if it is
                     negative number otherwise print positive.</h4>
-                <div class="ms-3 mt-3 border border-end-0 border-top-0 border-start-0 border-1 border-dark">
+                <div class="box ms-3 mt-3 border border-end-0 border-top-0 border-start-0 border-1 border-dark">
                     <tr>
-                        <td><label class="h5">Enter Number:</label></td>
-                        <td><input type="number" onkeyup="checkInput4()" id="num4"><br></td>
+                        <td><label class="label h5">Enter Number:</label></td>
+                        <td><input class="input" type="number" onkeyup="checkInput4()" id="num4"><br></td>
                     </tr>
                     <tr>
                         <td><button class="btn btn-secondary py-1 my-2 disabled" id="btn4" onclick="q4()">Submit</button></td>
                     </tr>
                     
                     <tr><br>
-                        <td><label class="h5" class="my-2">Result :</label></td>
+                        <td><label class="label h5" class="my-2">Result :</label></td>
                         <td><span class="ms-2 mb-2 text-success fw-bold" id="result4"></span></td>
                     </tr>
                 </div>
             </div>
              <!--=============== Question #5 ============ -->
              <div class="mb-4">
-                <h4><span class="text-danger">5-</span> Write a program that take 3 integers from user then print the max element
+                <h4><span class="text-danger number-section">5-</span> Write a program that take 3 integers from user then print the max element
                     and the min element.</h4>
-                <div class="ms-3 mt-3 border border-end-0 border-top-0 border-start-0 border-1 border-dark">
+                <div class="box ms-3 mt-3 border border-end-0 border-top-0 border-start-0 border-1 border-dark">
                     <table>
                         <tr>
-                            <td><label class="h5">Enter Number 1</label></td>
-                            <td><label class="h5">:</label></td>
-                            <td><input class="mt-1 ms-1" type="number"onkeyup="checkInput5()" id="num5-1"><br></td>
+                            <td><label class="label h5">Enter Number 1</label></td>
+                            <td><label class="label h5">:</label></td>
+                            <td><input class="input" class="mt-1 ms-1" type="number"onkeyup="checkInput5()" id="num5-1"><br></td>
                         </tr>
     
                         <tr>
-                            <td><label class="h5">Enter Number 2</label></td>
-                            <td><label class="h5">:</label></td>
-                            <td><input class="mt-1 ms-1" type="number" onkeyup="checkInput5()" id="num5-2"><br></td>
+                            <td><label class="label h5">Enter Number 2</label></td>
+                            <td><label class="label h5">:</label></td>
+                            <td><input class="input" class="mt-1 ms-1" type="number" onkeyup="checkInput5()" id="num5-2"><br></td>
                         </tr>
                         <tr>
-                            <td><label class="h5">Enter Number 3</label></td>
-                            <td><label class="h5">:</label></td>
-                            <td><input class="mt-1 ms-1" type="number" onkeyup="checkInput5()" id="num5-3"><br></td>
+                            <td><label class="label h5">Enter Number 3</label></td>
+                            <td><label class="label h5">:</label></td>
+                            <td><input class="input" class="mt-1 ms-1" type="number" onkeyup="checkInput5()" id="num5-3"><br></td>
                         </tr>
                         <tr>
                             <td><button class="btn btn-secondary py-1 my-2 disabled" id="btn5" onclick="q5()">Submit</button></td>
                         </tr>         
                     </table>
-                    <label class="h5" class="my-2">Max Number :</label>
+                    <label class="label h5" class="my-2">Max Number :</label>
                     <span class="ms-2 mb-2 text-success fw-bold" id="result5-1"></span><br>
-                    <label class="h5" class="my-2">Min Number :</label>
+                    <label class="label h5" class="my-2">Min Number :</label>
                     <span class="ms-2 mb-2 text-success fw-bold" id="result5-2"></span>
                 </div>
             </div>  
             <!--=============== Question #6 ============ -->
             <div class="mb-4">
-                <h4><span class="text-danger">6-</span> Write a program that allows the user to insert integer number then
+                <h4><span class="text-danger number-section">6-</span> Write a program that allows the user to insert integer number then
                     check If a number is even or odd</h4>
-                <div class="ms-3 mt-3 border border-end-0 border-top-0 border-start-0 border-1 border-dark">
+                <div class="box ms-3 mt-3 border border-end-0 border-top-0 border-start-0 border-1 border-dark">
                     <tr>
-                        <td><label class="h5">Enter Number:</label></td>
-                        <td><input type="number" onkeyup="checkInput6()" id="num6"><br></td>
+                        <td><label class="label h5">Enter Number:</label></td>
+                        <td><input class="input" type="number" onkeyup="checkInput6()" id="num6"><br></td>
                     </tr>
                     <tr>
                         <td><button class="btn btn-secondary py-1 my-2 disabled" id="btn6" onclick="q6()">Submit</button></td>
                     </tr>
                     
                     <tr><br>
-                        <td><label class="h5" class="my-2">Result :</label></td>
+                        <td><label class="label h5" class="my-2">Result :</label></td>
                         <td><span class="ms-2 mb-2 text-success fw-bold" id="result6"></span></td>
                     </tr>
                 </div>
             </div>         
             <!--=============== Question #7 ============ -->
             <div class="mb-4">
-                <h4><span class="text-danger">7-</span> Write a program that take character from user then if it is vowel chars (a,e,I,o,u) then print vowel otherwise print consonant</h4>
-                <div class="ms-3 mt-3 border border-end-0 border-top-0 border-start-0 border-1 border-dark">
+                <h4><span class="text-danger number-section">7-</span> Write a program that take character from user then if it is vowel chars (a,e,I,o,u) then print vowel otherwise print consonant</h4>
+                <div class="box ms-3 mt-3 border border-end-0 border-top-0 border-start-0 border-1 border-dark">
                     <tr>
-                        <td><label class="h5">Enter character:</label></td>
-                        <td><input type="text" maxlength="1" onkeyup="checkInput7()" id="num7"><br></td>
+                        <td><label class="label h5">Enter character:</label></td>
+                        <td><input class="input" type="text" maxlength="1" onkeyup="checkInput7()" id="num7"><br></td>
                     </tr>
                     <tr>
                         <td><button class="btn btn-secondary py-1 my-2 disabled" id="btn7" onclick="q7()">Submit</button></td>
                     </tr>
                     
                     <tr><br>
-                        <td><label class="h5" class="my-2">Result :</label></td>
+                        <td><label class="label h5" class="my-2">Result :</label></td>
                         <td><span class="ms-2 mb-2 text-success fw-bold" id="result7"></span></td>
                     </tr>
                 </div>
             </div>  
             <!--=============== Question #8 ============ -->
             <div class="mb-4">
-                <h4><span class="text-danger">8-</span> Write a program that allows user to insert integer then print all numbers between 1 to
+                <h4><span class="text-danger number-section">8-</span> Write a program that allows user to insert integer then print all numbers between 1 to
                     that’s number</h4>
-                <div class="ms-3 mt-3 border border-end-0 border-top-0 border-start-0 border-1 border-dark">
+                <div class="box ms-3 mt-3 border border-end-0 border-top-0 border-start-0 border-1 border-dark">
                     <tr>
-                        <td><label class="h5">Enter Number:</label></td>
-                        <td><input type="number" onkeyup="checkInput8()" id="num8"><br></td>
+                        <td><label class="label h5">Enter Number:</label></td>
+                        <td><input class="input" type="number" onkeyup="checkInput8()" id="num8"><br></td>
                     </tr>
                     <tr>
                         <td><button class="btn btn-secondary py-1 my-2 disabled" id="btn8" onclick="q8()">Submit</button></td>
                     </tr>
                     
                     <tr><br>
-                        <td><label class="h5" class="my-2">Result :</label></td>
+                        <td><label class="label h5" class="my-2">Result :</label></td>
                         <td><span class="ms-2 mb-2 text-success fw-bold" id="result8"></span></td>
                     </tr>
                 </div>
             </div> 
             <!--=============== Question #9 ============ -->
             <div class="mb-4">
-                <h4><span class="text-danger">9-</span> Write a program that allows user to insert integer then print a multiplication table up to 12.</h4>
-                <div class="ms-3 mt-3 border border-end-0 border-top-0 border-start-0 border-1 border-dark">
+                <h4><span class="text-danger number-section">9-</span> Write a program that allows user to insert integer then print a multiplication table up to 12.</h4>
+                <div class="box ms-3 mt-3 border border-end-0 border-top-0 border-start-0 border-1 border-dark">
                     <tr>
-                        <td><label class="h5">Enter Number:</label></td>
-                        <td><input type="number" onkeyup="checkInput9()" id="num9"><br></td>
+                        <td><label class="label h5">Enter Number:</label></td>
+                        <td><input class="input" type="number" onkeyup="checkInput9()" id="num9"><br></td>
                     </tr>
                     <tr>
                         <td><button class="btn btn-secondary py-1 my-2 disabled" id="btn9" onclick="q9()">Submit</button></td>
                     </tr>
                     
                     <tr><br>
-                        <td><label class="h5" class="my-2">Result :</label></td>
+                        <td><label class="label h5" class="my-2">Result :</label></td>
                         <td><span class="ms-2 mb-2 text-success fw-bold" id="result9"></span></td>
                     </tr>
                 </div>
             </div> 
             <!--=============== Question #10 ============ -->
             <div class="mb-4">
-                <h4><span class="text-danger">10-</span> Write a program that allows to user to insert number then print all even numbers
+                <h4><span class="text-danger number-section">10-</span> Write a program that allows to user to insert number then print all even numbers
                     between 1 to this number</h4>
-                <div class="ms-3 mt-3 border border-end-0 border-top-0 border-start-0 border-1 border-dark">
+                <div class="box ms-3 mt-3 border border-end-0 border-top-0 border-start-0 border-1 border-dark">
                     <tr>
-                        <td><label class="h5">Enter Number:</label></td>
-                        <td><input type="number" onkeyup="checkInput10()" id="num10"><br></td>
+                        <td><label class="label h5">Enter Number:</label></td>
+                        <td><input class="input" type="number" onkeyup="checkInput10()" id="num10"><br></td>
                     </tr>
                     <tr>
                         <td><button class="btn btn-secondary py-1 my-2 disabled" id="btn10" onclick="q10()">Submit</button></td>
                     </tr>
                     
                     <tr><br>
-                        <td><label class="h5" class="my-2">Result :</label></td>
+                        <td><label class="label h5" class="my-2">Result :</label></td>
                         <td><span class="ms-2 mb-2 text-success fw-bold" id="result10"></span></td>
                     </tr>
                 </div>
             </div> 
             <!--=============== Question #11 ============ -->
             <div class="mb-4">
-                <h4><span class="text-danger">11-</span> Write a program that take two integers then print the power</h4>
-                <div class="ms-3 mt-3 border border-end-0 border-top-0 border-start-0 border-1 border-dark">
+                <h4><span class="text-danger number-section">11-</span> Write a program that take two integers then print the power</h4>
+                <div class="box ms-3 mt-3 border border-end-0 border-top-0 border-start-0 border-1 border-dark">
                     <tr>
-                        <td><label class="h5">Enter Number:</label></td>
-                        <td><input type="number" onkeyup="checkInput11()" id="num11-1"><br></td>
+                        <td><label class="label h5">Enter Number:</label></td>
+                        <td><input class="input" type="number" onkeyup="checkInput11()" id="num11-1"><br></td>
                     </tr>
                     <tr>
-                        <td><label class="h5">Enter Number:</label></td>
-                        <td><input type="number" onkeyup="checkInput11()" id="num11-2"><br></td>
+                        <td><label class="label h5">Enter Number:</label></td>
+                        <td><input class="input" type="number" onkeyup="checkInput11()" id="num11-2"><br></td>
                     </tr>
                     <tr>
                         <td><button class="btn btn-secondary py-1 my-2 disabled" id="btn11" onclick="q11()">Submit</button></td>
                     </tr>
                     
                     <tr><br>
-                        <td><label class="h5" class="my-2">Result :</label></td>
+                        <td><label class="label h5" class="my-2">Result :</label></td>
                         <td><span class="ms-2 mb-2 text-success fw-bold" id="result11"></span></td>
                     </tr>
                 </div>
             </div> 
             <!--=============== Question #12 ============ -->
             <div class="mb-4">
-                <h4><span class="text-danger">12-</span> Write a program to enter marks of five subjects and calculate total, average and
+                <h4><span class="text-danger number-section">12-</span> Write a program to enter marks of five subjects and calculate total, average and
                     percentage.</h4>
-                <div class="ms-3 mt-3 border border-end-0 border-top-0 border-start-0 border-1 border-dark">
+                <div class="box ms-3 mt-3 border border-end-0 border-top-0 border-start-0 border-1 border-dark">
                     <table>
                     <tr>
-                        <td><label class="h5">Enter subject 1</label></td>
+                        <td><label class="label h5">Enter subject 1</label></td>
                         <td><label class="h5 mx-1">:</label></td>
-                        <td><input type="number" onkeyup="checkInput12()" id="num12-1"><br></td>
+                        <td><input class="input" type="number" onkeyup="checkInput12()" id="num12-1"><br></td>
                     </tr>
                     <tr>
-                        <td><label class="h5">Enter subject 2</label></td>
+                        <td><label class="label h5">Enter subject 2</label></td>
                         <td><label class="h5 mx-1">:</label></td>
-                        <td><input type="number" onkeyup="checkInput12()" id="num12-2"><br></td>
+                        <td><input class="input" type="number" onkeyup="checkInput12()" id="num12-2"><br></td>
                     </tr>
                     <tr>
-                        <td><label class="h5">Enter subject 3</label></td>
+                        <td><label class="label h5">Enter subject 3</label></td>
                         <td><label class="h5 mx-1">:</label></td>
-                        <td><input type="number" onkeyup="checkInput12()" id="num12-3"><br></td>
+                        <td><input class="input" type="number" onkeyup="checkInput12()" id="num12-3"><br></td>
                     </tr>
                     <tr>
-                        <td><label class="h5">Enter subject 4</label></td>
+                        <td><label class="label h5">Enter subject 4</label></td>
                         <td><label class="h5 mx-1">:</label></td>
-                        <td><input type="number" onkeyup="checkInput12()" id="num12-4"><br></td>
+                        <td><input class="input" type="number" onkeyup="checkInput12()" id="num12-4"><br></td>
                     </tr>
                     <tr>
-                        <td><label class="h5">Enter subject 5</label></td>
+                        <td><label class="label h5">Enter subject 5</label></td>
                         <td><label class="h5 mx-1">:</label></td>
-                        <td><input type="number" onkeyup="checkInput12()" id="num12-5"><br></td>
+                        <td><input class="input" type="number" onkeyup="checkInput12()" id="num12-5"><br></td>
                     </tr>
                 </table>
                     <tr>
                         <td><button class="btn btn-secondary py-1 my-2 disabled" id="btn12" onclick="q12()">Submit</button></td>
                     </tr>                   
                     <tr><br>
-                        <td><label class="h5" class="my-2">Total :</label></td>
+                        <td><label class="label h5" class="my-2">Total :</label></td>
                         <td><span class="ms-2 mb-2 text-success fw-bold" id="result12-1"></span></td>
                     </tr>
                     <tr><br>
-                        <td><label class="h5" class="my-2">Average :</label></td>
+                        <td><label class="label h5" class="my-2">Average :</label></td>
                         <td><span class="ms-2 mb-2 text-success fw-bold" id="result12-2"></span></td>
                     </tr>
                     <tr><br>
-                        <td><label class="h5" class="my-2">Percentage :</label></td>
+                        <td><label class="label h5" class="my-2">Percentage :</label></td>
                         <td><span class="ms-2 mb-2 text-success fw-bold" id="result12-3"></span></td>
                     </tr>
                 </div>
             </div> 
             <!--=============== Question #13 ============ -->
             <div class="mb-4">
-                <h4><span class="text-danger">13-</span> Write a program to input month number and print number of days in that
+                <h4><span class="text-danger number-section">13-</span> Write a program to input month number and print number of days in that
                     month.</h4>
-                <div class="ms-3 mt-3 border border-end-0 border-top-0 border-start-0 border-1 border-dark">
+                <div class="box ms-3 mt-3 border border-end-0 border-top-0 border-start-0 border-1 border-dark">
                     <tr>
-                        <td><label class="h5">Enter Number:</label></td>
-                        <td><input type="number" onkeyup="checkInput13()" id="num13"><br></td>
+                        <td><label class="label h5">Enter Number:</label></td>
+                        <td><input class="input" type="number" onkeyup="checkInput13()" id="num13"><br></td>
                     </tr>
                     <tr>
                         <td><button class="btn btn-secondary py-1 my-2 disabled" id="btn13" onclick="q13()">Submit</button></td>
                     </tr>
                     
                     <tr><br>
-                        <td><label class="h5" class="my-2">Result :</label></td>
+                        <td><label class="label h5" class="my-2">Result :</label></td>
                         <td><span class="ms-2 mb-2 text-success fw-bold" id="result13"></span></td>
                     </tr>
                 </div>
             </div> 
             <!--=============== Question #14 ============ -->
             <div class="mb-4">
-                <h4><span class="text-danger">14-</span> Write a program to input marks of five subjects
+                <h4><span class="text-danger number-section">14-</span> Write a program to input marks of five subjects
                     Physics, Chemistry, Biology, Mathematics and Computer
                     , Find percentage and grade</h4>
-                <div class="ms-3 mt-3 border border-end-0 border-top-0 border-start-0 border-1 border-dark">
+                <div class="box ms-3 mt-3 border border-end-0 border-top-0 border-start-0 border-1 border-dark">
                     <table>
                     <tr>
-                        <td><label class="h5">Enter Physics</label></td>
+                        <td><label class="label h5">Enter Physics</label></td>
                         <td><label class="h5 mx-1">:</label></td>
-                        <td><input type="number" onkeyup="checkInput14()" id="num14-1"><br></td>
+                        <td><input class="input" type="number" onkeyup="checkInput14()" id="num14-1"><br></td>
                     </tr>
                     <tr>
-                        <td><label class="h5">Enter Chemistry</label></td>
+                        <td><label class="label h5">Enter Chemistry</label></td>
                         <td><label class="h5 mx-1">:</label></td>
-                        <td><input type="number" onkeyup="checkInput14()" id="num14-2"><br></td>
+                        <td><input class="input" type="number" onkeyup="checkInput14()" id="num14-2"><br></td>
                     </tr>
                     <tr>
-                        <td><label class="h5">Enter Biology</label></td>
+                        <td><label class="label h5">Enter Biology</label></td>
                         <td><label class="h5 mx-1">:</label></td>
-                        <td><input type="number" onkeyup="checkInput14()" id="num14-3"><br></td>
+                        <td><input class="input" type="number" onkeyup="checkInput14()" id="num14-3"><br></td>
                     </tr>
                     <tr>
-                        <td><label class="h5">Enter Mathematics</label></td>
+                        <td><label class="label h5">Enter Mathematics</label></td>
                         <td><label class="h5 mx-1">:</label></td>
-                        <td><input type="number" onkeyup="checkInput14()" id="num14-4"><br></td>
+                        <td><input class="input" type="number" onkeyup="checkInput14()" id="num14-4"><br></td>
                     </tr>
                     <tr>
-                        <td><label class="h5">Enter Computer</label></td>
+                        <td><label class="label h5">Enter Computer</label></td>
                         <td><label class="h5 mx-1">:</label></td>
-                        <td><input type="number" onkeyup="checkInput14()" id="num14-5"><br></td>
+                        <td><input class="input" type="number" onkeyup="checkInput14()" id="num14-5"><br></td>
                     </tr>
                 </table>
                     <tr>
                         <td><button class="btn btn-secondary py-1 my-2 disabled" id="btn14" onclick="q14()">Submit</button></td>
                     </tr>                   
                     <tr><br>
-                        <td><label class="h5" class="my-2">percentage  :</label></td>
+                        <td><label class="label h5" class="my-2">percentage  :</label></td>
                         <td><span class="ms-2 mb-2 text-success fw-bold" id="result14-1"></span></td>
                     </tr>
                     <tr><br>
-                        <td><label class="h5" class="my-2">Grade :</label></td>
+                        <td><label class="label h5" class="my-2">Grade :</label></td>
                         <td><span class="ms-2 mb-2 text-success fw-bold" id="result14-2"></span></td>
                     </tr>
                 </div>
             </div> 
-            <h2 class="text-center h1 mb-5"><span id="starsBefore"></span> Using Switch Case <span id="starsAfter"></span></h2>
+            <h2 id="case-section" class="text-center h1 mb-5"><span id="starsBefore"></span> Using Switch Case <span id="starsAfter"></span></h2>
             <!--=============== Question #15 ============ -->
             <div class="mb-4">
-                <h4><span class="text-danger">15-</span> Write a program to print total number of days in month</h4>
-                <div class="ms-3 mt-3 border border-end-0 border-top-0 border-start-0 border-1 border-dark">
+                <h4><span class="text-danger number-section">15-</span> Write a program to print total number of days in month</h4>
+                <div class="box ms-3 mt-3 border border-end-0 border-top-0 border-start-0 border-1 border-dark">
                     <tr>                           
-                        <td><label class="h5">Enter Month:</label></td>
-                        <td><input type="text" onkeyup="checkInput15()" id="num15"><br></td>
+                        <td><label class="label h5">Enter Month:</label></td>
+                        <td><input class="input" type="text" onkeyup="checkInput15()" id="num15"><br></td>
                     </tr>
                     <tr>
                         <td><button class="btn btn-secondary py-1 my-2 disabled" id="btn15" onclick="q15()">Submit</button></td>
                     </tr>                
                     <tr><br>
-                        <td><label class="h5" class="my-2">Result :</label></td>
+                        <td><label class="label h5" class="my-2">Result :</label></td>
                         <td><span class="ms-2 mb-2 text-success fw-bold" id="result15"></span></td>
                     </tr>
                 </div>
             </div>
             <!--=============== Question #16 ============ -->
             <div class="mb-4">
-                <h4><span class="text-danger">16-</span> Write a program to check whether an alphabet is vowel or consonant</h4>
-                <div class="ms-3 mt-3 border border-end-0 border-top-0 border-start-0 border-1 border-dark">
+                <h4><span class="text-danger number-section">16-</span> Write a program to check whether an alphabet is vowel or consonant</h4>
+                <div class="box ms-3 mt-3 border border-end-0 border-top-0 border-start-0 border-1 border-dark">
                     <tr>                           
-                        <td><label class="h5">Enter character:</label></td>
-                        <td><input type="text" maxlength="1" onkeyup="checkInput16()" id="num16"><br></td>
+                        <td><label class="label h5">Enter character:</label></td>
+                        <td><input class="input" type="text" maxlength="1" onkeyup="checkInput16()" id="num16"><br></td>
                     </tr>
                     <tr>
                         <td><button class="btn btn-secondary py-1 my-2 disabled" id="btn16" onclick="q16()">Submit</button></td>
                     </tr>                
                     <tr><br>
-                        <td><label class="h5" class="my-2">Result :</label></td>
+                        <td><label class="label h5" class="my-2">Result :</label></td>
                         <td><span class="ms-2 mb-2 text-success fw-bold" id="result16"></span></td>
                     </tr>
                 </div>
             </div>
             <!--=============== Question #17 ============ -->
             <div class="mb-4">
-                <h4><span class="text-danger">17-</span> Write a program to find maximum between two numbers</h4>
-                <div class="ms-3 mt-3 border border-end-0 border-top-0 border-start-0 border-1 border-dark">
+                <h4><span class="text-danger number-section">17-</span> Write a program to find maximum between two numbers</h4>
+                <div class="box ms-3 mt-3 border border-end-0 border-top-0 border-start-0 border-1 border-dark">
                     <table>
                         <tr>                           
-                            <td><label class="h5">Enter Number 1</label></td>
+                            <td><label class="label h5">Enter Number 1</label></td>
                             <td><label class="h5 mx-1">:</label></td>
-                            <td><input type="number" maxlength="1" onkeyup="checkInput17()" id="num17-1"><br></td>
+                            <td><input class="input" type="number" maxlength="1" onkeyup="checkInput17()" id="num17-1"><br></td>
                         </tr>
                         <tr>                           
-                            <td><label class="h5">Enter Number 2</label></td>
+                            <td><label class="label h5">Enter Number 2</label></td>
                             <td><label class="h5 mx-1">:</label></td>
-                            <td><input type="number" maxlength="1" onkeyup="checkInput17()" id="num17-2"><br></td>
+                            <td><input class="input" type="number" maxlength="1" onkeyup="checkInput17()" id="num17-2"><br></td>
                         </tr>
                     </table>
                     <tr>
                         <td><button class="btn btn-secondary py-1 my-2 disabled" id="btn17" onclick="q17()">Submit</button></td>
                     </tr>                
                     <tr><br>
-                        <td><label class="h5" class="my-2">Result :</label></td>
+                        <td><label class="label h5" class="my-2">Result :</label></td>
                         <td><span class="ms-2 mb-2 text-success fw-bold" id="result17"></span></td>
                     </tr>
                 </div>
             </div>
             <!--=============== Question #18 ============ -->
             <div class="mb-4">
-                <h4><span class="text-danger">18-</span> Write a program to check whether a number is even or odd</h4>
-                <div class="ms-3 mt-3 border border-end-0 border-top-0 border-start-0 border-1 border-dark">
+                <h4><span class="text-danger number-section">18-</span> Write a program to check whether a number is even or odd</h4>
+                <div class="box ms-3 mt-3 border border-end-0 border-top-0 border-start-0 border-1 border-dark">
                     <tr>                           
-                        <td><label class="h5">Enter Number:</label></td>
-                        <td><input type="text" onkeyup="checkInput18()" id="num18"><br></td>
+                        <td><label class="label h5">Enter Number:</label></td>
+                        <td><input class="input" type="text" onkeyup="checkInput18()" id="num18"><br></td>
                     </tr>
                     <tr>
                         <td><button class="btn btn-secondary py-1 my-2 disabled" id="btn18" onclick="q18()">Submit</button></td>
                     </tr>                
                     <tr><br>
-                        <td><label class="h5" class="my-2">Result :</label></td>
+                        <td><label class="label h5" class="my-2">Result :</label></td>
                         <td><span class="ms-2 mb-2 text-success fw-bold" id="result18"></span></td>
                     </tr>
                 </div>
             </div>
             <!--=============== Question #19 ============ -->
             <div class="mb-4">
-                <h4><span class="text-danger">19-</span> Write a program to check whether a number is positive or negative or zero</h4>
-                <div class="ms-3 mt-3 border border-end-0 border-top-0 border-start-0 border-1 border-dark">
+                <h4><span class="text-danger number-section">19-</span> Write a program to check whether a number is positive or negative or zero</h4>
+                <div class="box ms-3 mt-3 border border-end-0 border-top-0 border-start-0 border-1 border-dark">
                     <tr>                           
-                        <td><label class="h5">Enter Number:</label></td>
-                        <td><input type="text" onkeyup="checkInput19()" id="num19"><br></td>
+                        <td><label class="label h5">Enter Number:</label></td>
+                        <td><input class="input" type="text" onkeyup="checkInput19()" id="num19"><br></td>
                     </tr>
                     <tr>
                         <td><button class="btn btn-secondary py-1 my-2 disabled" id="btn19" onclick="q19()">Submit</button></td>
                     </tr>                
                     <tr><br>
-                        <td><label class="h5" class="my-2">Result :</label></td>
+                        <td><label class="label h5" class="my-2">Result :</label></td>
                         <td><span class="ms-2 mb-2 text-success fw-bold" id="result19"></span></td>
                     </tr>
                 </div>
             </div>
             <!--=============== Question #20 ============ -->
             <div class="mb-4">
-                <h4><span class="text-danger">20-</span> Write a program to create Simple Calculator</h4>
-                <div class="ms-3 mt-3 border border-end-0 border-top-0 border-start-0 border-1 border-dark">
+                <h4><span class="text-danger number-section">20-</span> Write a program to create Simple Calculator</h4>
+                <div class="box ms-3 mt-3 border border-end-0 border-top-0 border-start-0 border-1 border-dark">
                     <table>
                         <tr>                           
-                            <td><label class="h5">Enter Number 1</label></td>
+                            <td><label class="label h5">Enter Number 1</label></td>
                             <td><label class="h5 mx-1">:</label></td>
-                            <td><input type="number" onkeyup="checkInput20()" id="num20-1"><br></td>
+                            <td><input class="input" type="number" onkeyup="checkInput20()" id="num20-1"><br></td>
                         </tr>
                         <tr>                           
-                            <td><label class="h5">Enter an Operator </label></td>
+                            <td><label class="label h5">Enter an Operator </label></td>
                             <td><label class="h5 mx-1">:</label></td>
-                            <td><input type="text" maxlength="1" class="d-block w-25 m-auto text-center" onkeyup="checkInput20()" id="num20-2"></td>
+                            <td><input class="input" type="text" maxlength="1" class="d-block w-25 m-auto text-center" onkeyup="checkInput20()" id="num20-2"></td>
                             <td><label class="h6 mx-1 text-muted" id="hint"> ==> Use only ( + , - , * , / , % )</label></td>
                         </tr>
                         <tr>                           
-                            <td><label class="h5">Enter Number 2</label></td>
+                            <td><label class="label h5">Enter Number 2</label></td>
                             <td><label class="h5 mx-1">:</label></td>
-                            <td><input type="number" onkeyup="checkInput20()" id="num20-3"><br></td>
+                            <td><input class="input" type="number" onkeyup="checkInput20()" id="num20-3"><br></td>
                         </tr>
                     </table>
                     <tr>
                         <td><button class="btn btn-secondary py-1 my-2 disabled" id="btn20" onclick="q20()">Submit</button></td>
                     </tr>                
                     <tr><br>
-                        <td><label class="h5" class="my-2">Result :</label></td>
+                        <td><label class="label h5" class="my-2">Result :</label></td>
                         <td><span class="ms-2 mb-2 text-success fw-bold" id="result20"></span></td>
                     </tr>
                 </div>
             </div>
         </div>
     </section>
+
+    <div class="theme">
+        <button onclick="theme()"><i id="theme-on" class="bi bi-toggle-on"></i></button>
+    </div>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/index.min.js"></script>
     

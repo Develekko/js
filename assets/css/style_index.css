@@ -10,8 +10,71 @@ section
     outline: 1px solid black;
     border-style:double;
 }
-
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+  }
 h1,h2,label
 {
-    color: #001F5F!important;
+    color: #001F5F;
+}
+.dark-mode 
+{
+    background: radial-gradient(50% 50% at 50% 50%,#272039 0,#1b1921 100%);
+    color: #fff!important;
+}
+.section-border
+{
+    border-color: #F98164;
+}
+.theme
+{
+    position: fixed;
+    top: 10vh;
+    right: 0px;
+    z-index: 9999999!important;
+}
+.theme button
+{
+    border: none;
+    background-color: transparent;
+}
+.theme button i 
+{
+   font-size: 40px;
+   color:#001F5F;
+}
+.theme button i.bi-toggle-off
+{
+   color:#0D6EFD!important;
+}
+.heading
+{
+    color: #fff!important;
+}
+.toggle-label
+{
+    color: #F98164;
+}
+.toggle-input
+{
+    background:#1b1627;
+    border: 1px solid #F98164;
+    color: #fff;
+}
+.toggle-input:focus
+{
+    color: #fff;
+}
+.number-span
+{
+    color: #0D6EFD!important;
+}
+.box-border
+{
+    border-color:#F98164!important ;
 }
