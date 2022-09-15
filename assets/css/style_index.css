@@ -50,7 +50,7 @@ h1,h2,label
 }
 .theme button i.bi-toggle-off
 {
-   color:#0D6EFD!important;
+   color:greenyellow!important;
 }
 .heading
 {
@@ -72,7 +72,7 @@ h1,h2,label
 }
 .number-span
 {
-    color: #0D6EFD!important;
+    color: #greenyellow!important;
 }
 .box-border
 {
